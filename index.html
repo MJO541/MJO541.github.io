@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Omar — Juriste Data, IA &amp; Propriété Intellectuelle</title>
+<meta name="description" content="Mohammad Omar, Docteur en Droit. Juriste spécialisé en protection des données, intelligence artificielle et propriété intellectuelle.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#12213A;
+    --navy-deep:#0B1729;
+    --ink:#26282D;
+    --ink-soft:#565A62;
+    --gold:#9C7A3C;
+    --gold-light:#B79457;
+    --cream:#F8F6F1;
+    --paper:#FFFFFF;
+    --line:#DEDACC;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Lora', Georgia, serif;
+    font-size:17px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.brand{
+    font-family:'Cormorant Garamond', Georgia, serif;
+    font-weight:600;
+    color:var(--navy);
+    margin:0;
+  }
+  a{color:var(--navy); text-decoration:none;}
+  a:hover{color:var(--gold);}
+  img{max-width:100%; display:block;}
+
+  /* ===== Header / Nav ===== */
+  header{
+    background:var(--navy-deep);
+    border-bottom:1px solid var(--gold);
+  }
+  .nav-wrap{
+    max-width:1040px;
+    margin:0 auto;
+    padding:18px 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+  }
+  .brand{color:#F3EFE4; font-size:1.45rem; letter-spacing:.02em;}
+  .brand span{color:var(--gold-light); font-style:italic; font-weight:500;}
+  nav ul{
+    list-style:none; display:flex; gap:28px; margin:0; padding:0;
+    font-family:'Cormorant Garamond', serif;
+    font-variant:small-caps;
+    letter-spacing:.03em;
+    font-size:1.08rem;
+  }
+  nav a{color:#DCD6C4;}
+  nav a:hover{color:var(--gold-light);}
+
+  /* ===== Hero ===== */
+  .hero{
+    background:var(--navy);
+    color:#EDE9DC;
+    padding:64px 28px 56px;
+  }
+  .hero-wrap{
+    max-width:1040px; margin:0 auto;
+    display:grid; grid-template-columns:1fr 260px; gap:48px; align-items:center;
+  }
+  .seal{
+    width:96px; height:96px; border-radius:50%;
+    border:1.5px solid var(--gold);
+    display:flex; align-items:center; justify-content:center;
+    margin-bottom:22px;
+    font-family:'Cormorant Garamond', serif;
+    color:var(--gold-light);
+    font-size:1.9rem;
+    letter-spacing:.04em;
+  }
+  .hero h1{color:#FAF7EF; font-size:2.9rem; line-height:1.15;}
+  .hero .title{
+    font-family:'Cormorant Garamond', serif;
+    font-style:italic;
+    color:var(--gold-light);
+    font-size:1.35rem;
+    margin-top:8px;
+  }
+  .hero p.bio{
+    margin-top:22px; max-width:56ch;
+    color:#D9D4C5; font-size:1.02rem;
+  }
+  .contact-row{
+    margin-top:26px; display:flex; flex-wrap:wrap; gap:22px;
+    font-size:.95rem;
+  }
+  .contact-row a{color:#E7E2D2; border-bottom:1px solid rgba(231,226,210,.35); padding-bottom:2px;}
+  .contact-row a:hover{color:var(--gold-light); border-color:var(--gold-light);}
+  .portrait{
+    width:100%; border:1px solid var(--gold);
+    padding:6px; background:rgba(0,0,0,.15);
+  }
+  .portrait img{width:100%; height:auto;}
+
+  /* ===== Layout ===== */
+  .content-wrap{
+    max-width:1040px; margin:0 auto; padding:56px 28px 80px;
+    display:grid; grid-template-columns:1fr 300px; gap:56px;
+  }
+  main section{margin-bottom:52px;}
+  main section:last-child{margin-bottom:0;}
+  .section-label{
+    font-family:'Cormorant Garamond', serif;
+    font-variant:small-caps;
+    letter-spacing:.04em;
+    font-size:1.55rem;
+    color:var(--navy);
+    border-bottom:1px solid var(--line);
+    padding-bottom:10px;
+    margin-bottom:26px;
+  }
+  .section-label em{color:var(--gold); font-style:normal;}
+
+  /* Timeline / experience */
+  .job{
+    display:grid; grid-template-columns:150px 1fr; gap:20px;
+    padding:18px 0; border-top:1px solid var(--line);
+  }
+  .job:first-of-type{border-top:none;}
+  .job-dates{
+    font-family:'Cormorant Garamond', serif;
+    color:var(--gold);
+    font-size:1rem;
+    font-style:italic;
+    padding-top:2px;
+  }
+  .job h3{font-size:1.22rem; margin-bottom:2px;}
+  .job .org{color:var(--ink-soft); font-size:.95rem; margin-bottom:10px; font-style:italic;}
+  .job ul{margin:0; padding-left:18px; font-size:.97rem; color:var(--ink);}
+  .job li{margin-bottom:6px;}
+
+  /* Formation */
+  .degree{padding:14px 0; border-top:1px solid var(--line);}
+  .degree:first-of-type{border-top:none;}
+  .degree h3{font-size:1.1rem;}
+  .degree .org{color:var(--ink-soft); font-size:.93rem; font-style:italic;}
+
+  /* Publications / communications */
+  .pub-list{list-style:none; margin:0; padding:0;}
+  .pub-list li{
+    padding:14px 0; border-top:1px solid var(--line);
+    font-size:.97rem;
+  }
+  .pub-list li:first-child{border-top:none;}
+  .pub-list .pub-meta{color:var(--ink-soft); font-size:.88rem; display:block; margin-top:4px;}
+
+  /* Sidebar */
+  aside .box{margin-bottom:36px;}
+  aside h3{
+    font-family:'Cormorant Garamond', serif;
+    font-variant:small-caps;
+    letter-spacing:.03em;
+    color:var(--gold);
+    font-size:1.15rem;
+    border-bottom:1px solid var(--line);
+    padding-bottom:8px;
+    margin-bottom:14px;
+  }
+  aside ul{margin:0; padding-left:18px; font-size:.92rem; color:var(--ink-soft);}
+  aside li{margin-bottom:7px;}
+  .lang-item{display:flex; justify-content:space-between; font-size:.93rem; margin-bottom:8px;}
+  .lang-item span:last-child{color:var(--ink-soft); font-style:italic;}
+
+  /* Footer */
+  footer{
+    background:var(--navy-deep); color:#9C9787;
+    text-align:center; padding:26px 20px; font-size:.85rem;
+    border-top:1px solid var(--gold);
+  }
+
+  @media (max-width:820px){
+    .hero-wrap{grid-template-columns:1fr;}
+    .portrait{max-width:220px;}
+    .content-wrap{grid-template-columns:1fr;}
+    .job{grid-template-columns:1fr;}
+    .job-dates{padding-top:0;}
+    nav ul{gap:16px; font-size:1rem; flex-wrap:wrap;}
+    .hero h1{font-size:2.3rem;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <div class="brand">Mohammad <span>Omar</span></div>
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="accueil">
+  <div class="hero-wrap">
+    <div>
+      <div class="seal">MO</div>
+      <h1>Mohammad Omar</h1>
+      <div class="title">Double Ph.D. — Juriste Data, IA &amp; Propriété Intellectuelle</div>
+      <p class="bio">
+        Docteur en droit privé, spécialisé dans la conformité des données personnelles et de santé,
+        l'intelligence artificielle et la propriété intellectuelle. J'accompagne institutions et
+        entreprises dans la structuration de leur conformité RGPD, l'analyse des risques liés à l'IA
+        et la négociation de contrats de recherche et d'innovation.
+      </p>
+      <div class="contact-row">
+        <a href="mailto:mohammad.j.omar@proton.me">mohammad.j.omar@proton.me</a>
+        <a href="tel:+33620198389">+33 6 20 19 83 89</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="assets/photo.png" alt="Portrait de Mohammad Omar">
+    </div>
+  </div>
+</section>
+
+<div class="content-wrap">
+  <main>
+
+    <section id="parcours">
+      <h2 class="section-label">Parcours <em>Professionnel</em></h2>
+
+      <div class="job">
+        <div class="job-dates">09/2026 — présent</div>
+        <div>
+          <h3>Juriste RGPD, IA et PI</h3>
+          <div class="org">Institut de l'Intelligence Artificielle en Santé (IIAS)</div>
+          <ul>
+            <li>Analyses de conformité des traitements de données personnelles et de santé, et analyses d'impact relatives à la protection des données (AIPD).</li>
+            <li>Conseil aux investigateurs et porteurs de projets ; participation aux demandes d'avis ou d'autorisation auprès de la CNIL.</li>
+            <li>Maintien de la conformité de l'entrepôt de données de santé (EDS) au référentiel CNIL et vérification des conventions et contrats avec les partenaires extérieurs.</li>
+            <li>Rédaction, analyse et négociation de contrats liés à la recherche et à l'innovation, et conseil juridique en propriété intellectuelle.</li>
+            <li>Contribution à la stratégie de partenariats et de PI du CHU, en lien étroit avec la DRCI, l'IIAS et la DPO.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-dates">06/2026 — 08/2026</div>
+        <div>
+          <h3>Juriste Conformité Numérique</h3>
+          <div class="org">LOCK-T</div>
+          <ul>
+            <li>Participation aux audits RGPD et mise en conformité de clients (registres de traitement, mentions d'information, politiques de confidentialité).</li>
+            <li>Appui à la mise en conformité au Règlement IA : classification des systèmes d'IA, cartographie des risques algorithmiques, rédaction de politiques internes.</li>
+            <li>Contribution aux diagnostics cybersécurité et veille réglementaire NIS2/DORA.</li>
+            <li>Analyse et rédaction de contrats numériques, audit de clauses, CGV et contrats IT.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-dates">04/2026 — 05/2026</div>
+        <div>
+          <h3>Juriste en appui au DPO</h3>
+          <div class="org">CHU Grenoble Alpes</div>
+          <ul>
+            <li>Mise en conformité RGPD : fiches de traitement, mentions d'information, AIPD et analyses de risque de réidentification.</li>
+            <li>Traitement des demandes d'exercice des droits des personnes concernées, en coordination avec le DPO.</li>
+            <li>Analyse juridique et sécurité des projets liés aux EDS ; suivi des demandes d'accès au SNDS.</li>
+            <li>Élaboration d'une charte IA et déploiement d'un plan de conformité au Règlement IA.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-dates">10/2024 — 09/2025</div>
+        <div>
+          <h3>Compliance Officer</h3>
+          <div class="org">Versatech International</div>
+          <ul>
+            <li>Structuration et suivi du dispositif de conformité de l'entreprise ; identification et analyse des risques réglementaires (RGPD notamment).</li>
+            <li>Rédaction de procédures, politiques internes et supports de conformité ; analyse et rédaction des contrats.</li>
+            <li>Déploiement de plans d'action transverses en coordination avec les équipes juridiques, IT et opérationnelles.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-dates">09/2021 — 05/2026</div>
+        <div>
+          <h3>Chargé de Cours</h3>
+          <div class="org">Aix-Marseille Université</div>
+          <ul>
+            <li>Cours magistraux et travaux dirigés en droit d'auteur, compliance, RSE, droit des contrats, droit pénal et méthodologie juridique.</li>
+            <li>Travaux de recherche en compliance et gestion des risques réglementaires (rapports analytiques, études doctrinales).</li>
+            <li>Encadrement et suivi académique et professionnel de stagiaires.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-dates">2017 — 2020</div>
+        <div>
+          <h3>Interprète Anglais-Français</h3>
+          <div class="org">Cour d'Appel d'Aix-en-Provence</div>
+          <ul>
+            <li>Interprétation juridique en contexte contentieux et procédural, maîtrise de la terminologie juridique spécialisée en anglais et en français.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job">
+        <div class="job-dates">01/2017 — 12/2020</div>
+        <div>
+          <h3>Juriste</h3>
+          <div class="org">Cabinet Haddad</div>
+          <ul>
+            <li>Veille réglementaire, rédaction, analyse et optimisation de contrats et des risques juridiques.</li>
+            <li>Gestion et suivi de dossiers juridiques complexes ; interface avec clients, partenaires et équipes opérationnelles.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="formation">
+      <h2 class="section-label">For<em>mation</em></h2>
+
+      <div class="degree">
+        <h3>Doctorat en Droit Privé</h3>
+        <div class="org">Compliance et entreprise : les nouvelles contraintes de l'action économique — Université Aix-Marseille, Centre de Droit Économique</div>
+      </div>
+      <div class="degree">
+        <h3>Doctorat en Droit Privé</h3>
+        <div class="org">Le régime juridique des contrats commerciaux : l'exemple du crédit-bail — Université Libanaise</div>
+      </div>
+      <div class="degree">
+        <h3>Master 2 en Droit, Droit des Affaires Appliqué</h3>
+        <div class="org">Université Aix-Marseille</div>
+      </div>
+      <div class="degree">
+        <h3>Master en Droit des Affaires Internationales</h3>
+        <div class="org">Filière Francophone de Droit — Université Libanaise (major de promotion)</div>
+      </div>
+      <div class="degree">
+        <h3>Master en Études du Monde Anglophone</h3>
+        <div class="org">Aix-Marseille Université</div>
+      </div>
+      <div class="degree">
+        <h3>DESU, Droit et Pratiques de la Médiation et de la Négociation en Droit des Affaires</h3>
+        <div class="org">Aix-Marseille Université</div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2 class="section-label">Publica<em>tions</em> &amp; Communications</h2>
+      <ul class="pub-list">
+        <li>Digital Omnibus IA : le report qui n'en est pas un<span class="pub-meta">Village de la Justice — 13 août 2026</span></li>
+        <li>L'effet cascade contractuel : l'angle mort du paquet Omnibus<span class="pub-meta">Village de la Justice — 17 juillet 2026</span></li>
+        <li>Les contrats en droit américain et en droit français : convergences et divergences<span class="pub-meta">Revue parlementaire du Liban « Al-Hayat » — septembre 2026</span></li>
+        <li>L'acovat et l'essor de la médiation<span class="pub-meta">Revue parlementaire du Liban « Al-Hayat » — décembre 2025, n° 137, p. 16</span></li>
+        <li>Les parties du commerce international<span class="pub-meta">Revue parlementaire du Liban « Al-Hayat » — juin 2023, n° 127, p. 142</span></li>
+        <li>Le contrat de transport maritime<span class="pub-meta">Revue parlementaire du Liban « Al-Hayat » — décembre 2023, n° 129, p. 103</span></li>
+        <li>« De la RSE à la compliance »<span class="pub-meta">Communication orale — colloque « La RSE 30 ans après », Aix-Marseille Université, 17 novembre 2023</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <aside>
+    <div class="box">
+      <h3>Coordonnées</h3>
+      <ul>
+        <li><a href="mailto:mohammad.j.omar@proton.me">mohammad.j.omar@proton.me</a></li>
+        <li><a href="tel:+33620198389">+33 6 20 19 83 89</a></li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>Langues</h3>
+      <div class="lang-item"><span>Anglais</span><span>Bilingue</span></div>
+      <div class="lang-item"><span>Français</span><span>Bilingue</span></div>
+    </div>
+
+    <div class="box">
+      <h3>Affiliations</h3>
+      <ul>
+        <li>AFCDP</li>
+        <li>DPO Club</li>
+        <li>Association de la Médiation et de la Négociation en Droit des Affaires</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>Certificats</h3>
+      <ul>
+        <li>Institut CZS pour l'Intelligence Artificielle et le Droit (Université de Tübingen) — Droit de l'Union européenne et utilisation des outils d'IA</li>
+        <li>Université de Harvard — Droit des Contrats</li>
+        <li>Formation Cybersécurité 2026 — GCS-SARA</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>Projets</h3>
+      <ul>
+        <li>TrustFake — Trusted AI Labs, TReC 2026</li>
+      </ul>
+    </div>
+
+    <div class="box">
+      <h3>Références</h3>
+      <ul>
+        <li>Références professionnelles disponibles et communiquées sur demande.</li>
+      </ul>
+    </div>
+  </aside>
+</div>
+
+<footer id="contact">
+  © 2026 Mohammad Omar · <a href="mailto:mohammad.j.omar@proton.me" style="color:#C9A968;">mohammad.j.omar@proton.me</a>
+</footer>
+
+</body>
+</html>
