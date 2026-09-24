@@ -41,9 +41,16 @@
     display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px;
   }
   .brand{font-size:1.15rem; font-weight:600;}
-  nav ul{list-style:none; display:flex; gap:22px; margin:0; padding:0; font-size:.95rem;}
+  nav ul{list-style:none; display:flex; gap:22px; margin:0; padding:0; font-size:.95rem; align-items:center;}
   nav a{color:var(--ink-soft);}
   nav a:hover{color:var(--gold);}
+  .lang-switch{
+    border:1px solid var(--line); border-radius:14px; padding:4px 12px;
+    font-size:.82rem; color:var(--ink-soft);
+  }
+  .lang-switch a{color:var(--ink-soft);}
+  .lang-switch .active{color:var(--gold); font-weight:600;}
+  .lang-switch span{color:var(--line); margin:0 4px;}
 
   /* Hero */
   .hero{text-align:center; padding:56px 0 40px;}
@@ -125,6 +132,7 @@
       <li><a href="#formation">Formation</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li class="lang-switch"><span class="active">FR</span><span>/</span><a href="en.html">EN</a></li>
     </ul>
   </div>
 </nav>
