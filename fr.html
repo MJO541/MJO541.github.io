@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohammad Omar — Data, AI &amp; IP Legal Counsel</title>
-<meta name="description" content="Mohammad Omar, PhD in Law. Legal counsel for GDPR compliance, artificial intelligence and intellectual property.">
+<title>Mohammad Omar — Juriste Data, IA &amp; Propriété Intellectuelle</title>
+<meta name="description" content="Mohammad Omar, Docteur en Droit. Conseil en conformité RGPD, intelligence artificielle et propriété intellectuelle.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -36,6 +36,7 @@
   }
   .btn:hover{background:var(--gold); color:#fff;}
 
+  /* Header */
   header{border-bottom:1px solid var(--line); position:sticky; top:0; background:rgba(255,255,255,.92); backdrop-filter:blur(6px); z-index:10;}
   .nav-inner{
     max-width:980px; margin:0 auto; padding:18px 24px;
@@ -49,6 +50,7 @@
   .lang-switch a{color:var(--ink-soft);}
   .lang-switch .active{color:var(--gold); font-weight:700;}
 
+  /* Hero with animated brainwave background */
   .hero{position:relative; overflow:hidden; padding:100px 0 90px; text-align:center;}
   .wave-field{
     position:absolute; inset:0; top:0; left:0; width:100%; height:100%;
@@ -95,6 +97,7 @@
   .card h3{font-size:1.12rem; margin-bottom:10px;}
   .card p{color:var(--ink-soft); font-size:.94rem; margin:0;}
 
+  /* Generic sections */
   section.block{padding:70px 0;}
   section.block h2{font-size:1.75rem; margin-bottom:34px; text-align:center;}
   .entry{max-width:720px; margin:0 auto 26px; padding-bottom:26px; border-bottom:1px solid var(--line);}
@@ -113,13 +116,16 @@
   .pub .pub-title{font-weight:600; color:var(--navy); display:block;}
   .pub .pub-meta{color:var(--ink-soft); font-size:.85rem;}
 
+  /* Closing CTA */
   .cta{background:var(--navy); color:#fff; text-align:center; padding:80px 24px;}
   .cta h2{color:#fff; font-size:1.8rem; margin-bottom:14px;}
   .cta p{color:#C9CDD6; font-size:.95rem; margin-bottom:28px;}
   .cta .btn{background:var(--gold);}
   .cta .btn:hover{background:#fff; color:var(--navy);}
 
-  footer{text-align:center; padding:36px 20px; color:var(--ink-soft); font-size:.85rem;}
+  footer{
+    text-align:center; padding:36px 20px; color:var(--ink-soft); font-size:.85rem;
+  }
   footer a{color:var(--ink-soft); text-decoration:underline;}
 
   @media (max-width:780px){
@@ -137,10 +143,10 @@
     <nav>
       <ul>
         <li><a class="navlink" href="#services">Services</a></li>
-        <li><a class="navlink" href="#experience">Experience</a></li>
+        <li><a class="navlink" href="#parcours">Parcours</a></li>
         <li><a class="navlink" href="#publications">Publications</a></li>
-        <li class="lang-switch"><span class="active">EN</span> / <a href="fr.html">FR</a></li>
-        <li><a class="btn" href="#contact" style="padding:10px 18px;">Get in touch</a></li>
+        <li class="lang-switch"><a href="index.html">EN</a> / <span class="active">FR</span></li>
+        <li><a class="btn" href="#contact" style="padding:10px 18px;">Me contacter</a></li>
       </ul>
     </nav>
   </div>
@@ -155,129 +161,129 @@
     <div class="wave-row w2"><svg viewBox="0 0 800 40" preserveAspectRatio="none"><path d="M0 20 Q 20 2, 40 20 T 80 20 T 120 20 T 160 20 T 200 20 T 240 20 T 280 20 T 320 20 T 360 20 T 400 20 Q 420 2,440 20 T 480 20 T520 20 T560 20 T600 20 T640 20 T680 20 T720 20 T760 20 T800 20" fill="none" stroke="#9C7A3C" stroke-width="1.5"/></svg></div>
   </div>
   <div class="wrap hero-content">
-    <h1>Hi, I'm Mohammad — <span>Data, AI &amp; Intellectual Property Legal Counsel.</span></h1>
+    <h1>Bonjour, je suis Mohammad — <span>Juriste Data, IA &amp; Propriété Intellectuelle.</span></h1>
     <p class="sub">
-      PhD in Law, I help institutions and companies with GDPR compliance, AI regulation,
-      and the protection of intellectual property.
+      Docteur en droit, j'accompagne institutions et entreprises sur la conformité RGPD, la régulation
+      de l'intelligence artificielle et la protection de la propriété intellectuelle.
     </p>
     <div class="hero-visuals">
-      <div class="avatar"><img src="assets/photo.jpg" alt="Portrait of Mohammad Omar"></div>
-      <div class="ai-visual"><img src="assets/network-head.jpg" alt="AI neural network visualization"></div>
+      <div class="avatar"><img src="assets/photo.jpg" alt="Portrait de Mohammad Omar"></div>
+      <div class="ai-visual"><img src="assets/network-head.jpg" alt="Visualisation de réseau de neurones artificiels"></div>
     </div>
-    <a class="btn" href="mailto:mohammad.j.omar@proton.me">Book a call</a>
+    <a class="btn" href="mailto:mohammad.j.omar@proton.me">Réserver un échange</a>
   </div>
 </section>
 
 <section class="services" id="services">
   <div class="wrap">
-    <h2>My services</h2>
+    <h2>Mes services</h2>
     <div class="cards">
       <div class="card">
-        <h3>GDPR &amp; Health Data Compliance</h3>
-        <p>Audits, DPIAs, records of processing, and day-to-day support for DPO teams.</p>
+        <h3>Conformité RGPD &amp; Données de Santé</h3>
+        <p>Audits, AIPD, registres de traitement et accompagnement des équipes DPO au quotidien.</p>
       </div>
       <div class="card">
-        <h3>AI Advisory &amp; EU AI Act</h3>
-        <p>Classifying AI systems, mapping algorithmic risk, and drafting internal compliance policies.</p>
+        <h3>Conseil IA &amp; Règlement IA</h3>
+        <p>Classification des systèmes d'IA, cartographie des risques et politiques internes de conformité.</p>
       </div>
       <div class="card">
-        <h3>Intellectual Property &amp; Contracts</h3>
-        <p>Drafting, reviewing and negotiating research, innovation and partnership agreements.</p>
+        <h3>Propriété Intellectuelle &amp; Contrats</h3>
+        <p>Rédaction, analyse et négociation de contrats de recherche, d'innovation et de partenariat.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="block" id="experience">
+<section class="block" id="parcours">
   <div class="wrap">
-    <h2>Professional Experience</h2>
+    <h2>Parcours Professionnel</h2>
 
     <div class="entry">
-      <div class="when">September 2026 — present</div>
-      <h3>GDPR, AI &amp; IP Legal Counsel</h3>
+      <div class="when">Septembre 2026 — présent</div>
+      <h3>Juriste RGPD, IA et PI</h3>
       <div class="org">Institut de l'Intelligence Artificielle en Santé (IIAS)</div>
       <ul>
-        <li>Compliance analysis and DPIAs on personal and health data processing.</li>
-        <li>Supporting requests for opinions or authorizations before the CNIL; advising investigators.</li>
-        <li>Drafting and negotiating research and innovation contracts; IP legal counsel.</li>
+        <li>Analyses de conformité et AIPD sur les traitements de données personnelles et de santé.</li>
+        <li>Demandes d'avis ou d'autorisation auprès de la CNIL ; conseil aux investigateurs.</li>
+        <li>Rédaction et négociation de contrats de recherche et d'innovation, conseil en propriété intellectuelle.</li>
       </ul>
     </div>
 
     <div class="entry">
-      <div class="when">June 2026 — August 2026</div>
-      <h3>Digital Compliance Counsel</h3>
+      <div class="when">Juin 2026 — Août 2026</div>
+      <h3>Juriste Conformité Numérique</h3>
       <div class="org">LOCK-T</div>
       <ul>
-        <li>GDPR audits and client compliance; classifying AI systems under the EU AI Act.</li>
-        <li>Cybersecurity assessments and NIS2/DORA monitoring; digital contracts and terms of service.</li>
+        <li>Audits RGPD et mise en conformité clients ; classification des systèmes d'IA au titre du Règlement IA.</li>
+        <li>Diagnostics cybersécurité et veille réglementaire NIS2/DORA ; contrats numériques et CGV.</li>
       </ul>
     </div>
 
     <div class="entry">
-      <div class="when">April 2026 — May 2026</div>
-      <h3>Legal Counsel, DPO Support</h3>
+      <div class="when">Avril 2026 — Mai 2026</div>
+      <h3>Juriste en Appui au DPO</h3>
       <div class="org">CHU Grenoble Alpes</div>
       <ul>
-        <li>GDPR compliance, DPIAs and re-identification risk assessments.</li>
-        <li>Drafted an AI charter and deployed an EU AI Act compliance plan.</li>
+        <li>Mise en conformité RGPD, AIPD et analyses de risque de réidentification.</li>
+        <li>Élaboration d'une charte IA et déploiement d'un plan de conformité au Règlement IA.</li>
       </ul>
     </div>
 
     <div class="entry">
-      <div class="when">October 2024 — September 2025</div>
+      <div class="when">Octobre 2024 — Septembre 2025</div>
       <h3>Compliance Officer</h3>
       <div class="org">Versatech International</div>
       <ul>
-        <li>Structured the company's compliance program and managed regulatory risk.</li>
+        <li>Structuration du dispositif de conformité de l'entreprise et gestion des risques réglementaires.</li>
       </ul>
     </div>
 
     <div class="entry">
-      <div class="when">September 2021 — May 2026</div>
-      <h3>Lecturer</h3>
-      <div class="org">Aix-Marseille University</div>
+      <div class="when">Septembre 2021 — Mai 2026</div>
+      <h3>Chargé de Cours</h3>
+      <div class="org">Aix-Marseille Université</div>
       <ul>
-        <li>Lectures in copyright law, compliance, CSR, contract law and legal methodology.</li>
+        <li>Cours en droit d'auteur, compliance, RSE, droit des contrats et méthodologie juridique.</li>
       </ul>
     </div>
 
     <div class="entry">
       <div class="when">2017 — 2020</div>
-      <h3>Legal Counsel &amp; English-French Interpreter</h3>
-      <div class="org">Cabinet Haddad · Aix-en-Provence Court of Appeal</div>
+      <h3>Juriste &amp; Interprète Anglais-Français</h3>
+      <div class="org">Cabinet Haddad · Cour d'Appel d'Aix-en-Provence</div>
       <ul>
-        <li>Drafting, review and optimization of contracts; legal interpretation in contentious settings.</li>
+        <li>Rédaction, analyse et optimisation de contrats ; interprétation juridique en contexte contentieux.</li>
       </ul>
     </div>
   </div>
 </section>
 
-<section class="block" id="education" style="background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+<section class="block" id="formation" style="background:var(--panel); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
   <div class="wrap">
-    <h2>Education</h2>
-    <div class="degree"><h3>PhD in Private Law</h3><div class="org">Compliance and the firm: the new constraints of economic action — Aix-Marseille University</div></div>
-    <div class="degree"><h3>PhD in Private Law</h3><div class="org">The legal regime of commercial contracts: the case of leasing — Lebanese University</div></div>
-    <div class="degree"><h3>Master's, Applied Business Law</h3><div class="org">Aix-Marseille University</div></div>
-    <div class="degree"><h3>Master's, International Business Law</h3><div class="org">Lebanese University (top of class)</div></div>
-    <div class="degree"><h3>University Diploma, Mediation and Negotiation in Business Law</h3><div class="org">Aix-Marseille University</div></div>
+    <h2>Formation</h2>
+    <div class="degree"><h3>Doctorat en Droit Privé</h3><div class="org">Compliance et entreprise : les nouvelles contraintes de l'action économique — Aix-Marseille Université</div></div>
+    <div class="degree"><h3>Doctorat en Droit Privé</h3><div class="org">Le régime juridique des contrats commerciaux : l'exemple du crédit-bail — Université Libanaise</div></div>
+    <div class="degree"><h3>Master 2, Droit des Affaires Appliqué</h3><div class="org">Aix-Marseille Université</div></div>
+    <div class="degree"><h3>Master, Droit des Affaires Internationales</h3><div class="org">Université Libanaise (major de promotion)</div></div>
+    <div class="degree"><h3>DESU, Médiation et Négociation en Droit des Affaires</h3><div class="org">Aix-Marseille Université</div></div>
   </div>
 </section>
 
 <section class="block" id="publications">
   <div class="wrap">
-    <h2>Publications &amp; Talks</h2>
-    <div class="pub"><span class="pub-title">Digital Omnibus AI: the postponement that isn't one</span><span class="pub-meta">Village de la Justice — August 13, 2026</span></div>
-    <div class="pub"><span class="pub-title">The contractual cascade effect: the blind spot of the Omnibus package</span><span class="pub-meta">Village de la Justice — July 17, 2026</span></div>
-    <div class="pub"><span class="pub-title">Contracts under American and French law</span><span class="pub-meta">"Al-Hayat" review — September 2026</span></div>
-    <div class="pub"><span class="pub-title">The rise of mediation</span><span class="pub-meta">"Al-Hayat" review — December 2025, no. 137</span></div>
-    <div class="pub"><span class="pub-title">"From CSR to compliance"</span><span class="pub-meta">Conference talk, Aix-Marseille University — November 17, 2023</span></div>
+    <h2>Publications &amp; Communications</h2>
+    <div class="pub"><span class="pub-title">Digital Omnibus IA : le report qui n'en est pas un</span><span class="pub-meta">Village de la Justice — 13 août 2026</span></div>
+    <div class="pub"><span class="pub-title">L'effet cascade contractuel : l'angle mort du paquet Omnibus</span><span class="pub-meta">Village de la Justice — 17 juillet 2026</span></div>
+    <div class="pub"><span class="pub-title">Les contrats en droit américain et en droit français</span><span class="pub-meta">Revue « Al-Hayat » — septembre 2026</span></div>
+    <div class="pub"><span class="pub-title">L'acovat et l'essor de la médiation</span><span class="pub-meta">Revue « Al-Hayat » — décembre 2025, n° 137</span></div>
+    <div class="pub"><span class="pub-title">« De la RSE à la compliance »</span><span class="pub-meta">Colloque Aix-Marseille Université — 17 novembre 2023</span></div>
   </div>
 </section>
 
 <section class="cta" id="contact">
-  <h2>Let's talk</h2>
-  <p>No obligation — a practical conversation about your situation and compliance needs.</p>
-  <a class="btn" href="mailto:mohammad.j.omar@proton.me">Book a call</a>
+  <h2>Parlons-en</h2>
+  <p>Sans engagement — un échange concret sur votre situation et vos besoins de conformité.</p>
+  <a class="btn" href="mailto:mohammad.j.omar@proton.me">Réserver un appel</a>
 </section>
 
 <footer>
